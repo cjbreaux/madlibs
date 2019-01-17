@@ -7,6 +7,8 @@ $(document).ready(function() {
     var verbInput = $("input#verb").val();
     var nounInput = $("input#noun").val();
 
+
+
     $(".person1").text(person1Input);
     $(".person2").text(person2Input);
     $(".animal").text(animalInput);
@@ -14,8 +16,15 @@ $(document).ready(function() {
     $(".verb").text(verbInput);
     $(".noun").text(nounInput);
 
-    $("#story").show();
+    // $("#story").show();
+
+//links to new page but only after secpnd click of button
+
 
     event.preventDefault();
   });
+
+  $('#test1').click(function(){
+   window.location.href='success.html';
+   });
 });
